@@ -1,0 +1,20 @@
+import turtle
+from turtle import *
+
+ttl = "Niirmaal twaatii"
+
+wn = turtle.Screen()
+wn.title(f"{ttl}")
+wn.bgcolor("purple")
+
+color('blue', 'green')
+width("10")
+begin_fill()
+while True:
+    forward(-70)
+    circle(30, 360)
+    forward(70)
+    forward(20)
+    left(30)
+    if abs(pos()) < 1:
+        break
